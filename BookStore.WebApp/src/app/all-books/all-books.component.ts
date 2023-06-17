@@ -15,8 +15,10 @@ export class AllBooksComponent {
   }
 
   private getBook(): void{
-    this.service.getBook().subscribe((result) => {
+    this.service.getBook().subscribe(result => {
       this.books = result;
     });
   }
+
 }
+    
